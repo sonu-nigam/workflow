@@ -1,0 +1,66 @@
+name: assembler
+version: "3"
+
+services:
+  db:
+    container_name: ${MYSQL_HOST}
+    image: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=pass
+    volumes:
+      - ./data/db/mysql:/var/lib/mysql
+    networks:
+      - internal
+
+  nginx:
+    container_name: nginx
+    build:
+      context: .
+      dockerfile: nginx/Dockerfile
+    ports:
+      - "8080:80"
+    develop:
+      watch:
+        - action: sync
+          path: ./phorge
+          target: /var/www/phorge
+        - action: sync
+          path: ./arcanist
+          target: /var/www/arcanist
+    networks:
+      - internal
+    volumes:
+      - ./phorge/:/var/www/phorge/
+      - ./arcanist/:/var/www/arcanist/
+      - ./logs/nginx:/var/log/nginx
+    depends_on:
+      - php
+
+  php:
+    container_name: php
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - internal
+    volumes:
+      - ./phorge/:/var/www/phorge/
+      - ./arcanist/:/var/www/arcanist/
+      - ./logs/php.log:/var/log/fpm-php.www.log
+    # command: >
+    #   cd /var/www/phorge
+    #   && ./bin/storage upgrade"
+    develop:
+      watch:
+        - action: sync
+          path: ./phorge
+          target: /var/www/phorge
+        - action: sync
+          path: ./arcanist
+          target: /var/www/arcanist
+    depends_on:
+      - db
+
+networks:
+  internal:
+    driver: bridge

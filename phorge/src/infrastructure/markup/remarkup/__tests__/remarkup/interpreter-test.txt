@@ -1,0 +1,54 @@
+phutil_test_block_interpreter (foo=bar) {{{
+content
+}}}
+
+phutil_test_block_interpreter {{{ content
+content }}}
+
+phutil_test_block_interpreter {{{ content }}}
+
+phutil_test_block_interpreter(x=y){{{content}}}
+
+phutil_fake_test_block_interpreter {{{ content }}}
+~~~~~~~~~~
+Content: (content)
+Argv: (foo=bar)
+
+
+
+Content: ( content
+content )
+Argv: ()
+
+
+
+Content: ( content )
+Argv: ()
+
+
+
+Content: (content)
+Argv: (x=y)
+
+<p>phutil_fake_test_block_interpreter {{{ content }}}</p>
+~~~~~~~~~~
+Content: (content)
+Argv: (foo=bar)
+
+
+
+Content: ( content
+content )
+Argv: ()
+
+
+
+Content: ( content )
+Argv: ()
+
+
+
+Content: (content)
+Argv: (x=y)
+
+phutil_fake_test_block_interpreter {{{ content }}}

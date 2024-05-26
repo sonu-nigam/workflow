@@ -1,0 +1,64 @@
+/**
+ * @provides diffusion-icons-css
+ */
+
+.diffusion-clone-extras {
+  font-size: 11px;
+  text-align: right;
+  color: {$lightgreytext};
+}
+
+.diffusion-clone-label {
+  height: 30px;
+  line-height: 28px;
+}
+
+.diffusion-browse-name {
+  margin-left: 8px;
+  letter-spacing: 0.02em;
+}
+
+.diffusion-link-icon + .diffusion-link-icon {
+  margin-left: 6px;
+}
+
+.diffusion-search-boxen {
+  padding: 16px;
+}
+
+.diffusion-search-boxen .phui-form-view {
+  padding: 0;
+}
+
+.diffusion-clone-uri-wrapper {
+  display: flex;
+}
+
+.diffusion-clone-uri-wrapper .diffusion-clone-uri-io {
+  align-items: center;
+  justify-content: center;
+  border: 1px solid {$greyborder};
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  display: flex;
+  width: 38px;
+}
+
+.diffusion-clone-uri-wrapper a.button {
+  width: 12px;
+  height: 19px;
+  margin-left: 4px;
+}
+
+.diffusion-clone-uri-wrapper a.button .phui-icon-view {
+  left: 15px;
+  top: 7px;
+}
+
+.diffusion-clone-uri-wrapper  input.diffusion-clone-uri {
+  border-left: none;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  display: block;
+  width: 100%;
+}

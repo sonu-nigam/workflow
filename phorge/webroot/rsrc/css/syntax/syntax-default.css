@@ -1,0 +1,245 @@
+/**
+ * @provides syntax-default-css
+ * @generated
+ */
+
+.remarkup-code .bp {
+  color: {$syntax.builtin-pseudo}
+}
+
+.remarkup-code .c {
+  color: {$syntax.comment}
+}
+
+.remarkup-code .c1 {
+  color: {$syntax.comment-single}
+}
+
+.remarkup-code .cm,
+.remarkup-code .dc {
+  color: {$syntax.comment-multiline}
+}
+
+.remarkup-code .cp {
+  color: {$syntax.comment-preproc}
+}
+
+.remarkup-code .cs {
+  color: {$syntax.comment-special}
+}
+
+.remarkup-code .gd {
+  color: {$syntax.generic-deleted}
+}
+
+.remarkup-code .gh {
+  color: {$syntax.generic-heading}
+}
+
+.remarkup-code .gi {
+  color: {$syntax.generic-inserted}
+}
+
+.remarkup-code .go {
+  color: {$syntax.generic-output}
+}
+
+.remarkup-code .gp {
+  color: {$syntax.generic-prompt}
+}
+
+.remarkup-code .gr {
+  color: {$syntax.generic-red}
+}
+
+.remarkup-code .gt {
+  color: {$syntax.generic-traceback}
+}
+
+.remarkup-code .gu {
+  color: {$syntax.generic-underline}
+}
+
+.remarkup-code .hll {
+  color: {$syntax.highlighted-line}
+}
+
+.remarkup-code .il {
+  color: {$syntax.literal-number-integer-long}
+}
+
+.remarkup-code .k {
+  color: {$syntax.keyword}
+}
+
+.remarkup-code .kc {
+  color: {$syntax.keyword-constant}
+}
+
+.remarkup-code .kd {
+  color: {$syntax.keyword-declaration}
+}
+
+.remarkup-code .kn {
+  color: {$syntax.keyword-namespace}
+}
+
+.remarkup-code .kp {
+  color: {$syntax.keyword-preproc}
+}
+
+.remarkup-code .kr {
+  color: {$syntax.keyword-reserved}
+}
+
+.remarkup-code .kt {
+  color: {$syntax.keyword-type}
+}
+
+.remarkup-code .m {
+  color: {$syntax.literal-number}
+}
+
+.remarkup-code .mf {
+  color: {$syntax.literal-number-float}
+}
+
+.remarkup-code .mh {
+  color: {$syntax.literal-number-hex}
+}
+
+.remarkup-code .mi {
+  color: {$syntax.literal-number-integer}
+}
+
+.remarkup-code .mo {
+  color: {$syntax.literal-number-octal}
+}
+
+.remarkup-code .na {
+  color: {$syntax.name-attribute}
+}
+
+.remarkup-code .nb {
+  color: {$syntax.name-builtin}
+}
+
+.remarkup-code .nc {
+  color: {$syntax.name-class}
+}
+
+.remarkup-code .nd {
+  color: {$syntax.name-decorator}
+}
+
+.remarkup-code .ne {
+  color: {$syntax.name-entity}
+}
+
+.remarkup-code .nf {
+  color: {$syntax.name-function}
+}
+
+.remarkup-code .ni {
+  color: {$syntax.name-identifier}
+}
+
+.remarkup-code .nl {
+  color: {$syntax.name-label}
+}
+
+.remarkup-code .nn {
+  color: {$syntax.name-namespace}
+}
+
+.remarkup-code .no {
+  color: {$syntax.name-operator}
+}
+
+.remarkup-code .nt {
+  color: {$syntax.name-tag}
+}
+
+.remarkup-code .nv {
+  color: {$syntax.name-variable}
+}
+
+.remarkup-code .nx {
+  color: {$syntax.name-exception}
+}
+
+.remarkup-code .o {
+  color: {$syntax.operator}
+}
+
+.remarkup-code .ow {
+  color: {$syntax.operator-word}
+}
+
+.remarkup-code .p {
+  color: {$syntax.punctuation}
+}
+
+.remarkup-code .s {
+  color: {$syntax.string}
+}
+
+.remarkup-code .s1 {
+  color: {$syntax.string-single}
+}
+
+.remarkup-code .s2 {
+  color: {$syntax.string-double}
+}
+
+.remarkup-code .sb {
+  color: {$syntax.string-backtick}
+}
+
+.remarkup-code .sc {
+  color: {$syntax.literal-string-char}
+}
+
+.remarkup-code .sd {
+  color: {$syntax.string-doc}
+}
+
+.remarkup-code .se {
+  color: {$syntax.literal-string-escape}
+}
+
+.remarkup-code .sh {
+  color: {$syntax.string-heredoc}
+}
+
+.remarkup-code .si {
+  color: {$syntax.literal-string-interpol}
+}
+
+.remarkup-code .sr {
+  color: {$syntax.string-regex}
+}
+
+.remarkup-code .ss {
+  color: {$syntax.literal-string-symbol}
+}
+
+.remarkup-code .sx {
+  color: {$syntax.string-other}
+}
+
+.remarkup-code .vc {
+  color: {$syntax.name-variable-class}
+}
+
+.remarkup-code .vg {
+  color: {$syntax.variable-global}
+}
+
+.remarkup-code .vi {
+  color: {$syntax.variable-instance}
+}
+
+.remarkup-code .w {
+  color: {$syntax.text-whitespace}
+}
